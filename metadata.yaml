@@ -1,0 +1,16 @@
+name: kafka-topic
+summary: Represents a kafka topic
+maintainer: Sander Borny <sander.borny@ugent.be>
+description: |
+  Represents a kafka topic
+tags:
+  - misc
+requires:
+  kafka:
+    interface: kafka
+    scope: container
+provides:
+  kafka-topic-status:
+    interface: kafka-topic
+subordinate: True
+series: ['xenial']

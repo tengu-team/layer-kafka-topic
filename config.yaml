@@ -1,0 +1,21 @@
+options:
+  topic-name:
+    type: string
+    default: ""
+    description: |
+      Name of Kafka topic.
+  partitions:
+    type: int
+    default:
+    description: |
+      Number of topic partitions.
+  replication:
+    type: int
+    default:
+    description: |
+      Replication of topic.
+  compact:
+    type: boolean
+    default: False
+    description: |
+      Cleanup policy compact.
